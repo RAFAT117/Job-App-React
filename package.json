@@ -50,6 +50,7 @@
     "@types/json-schema": "^7.0.15",
     "@types/react": "~18.3.12",
     "@types/responselike": "^1.0.3",
+    "babel-plugin-module-resolver": "^5.0.2",
     "typescript": "~5.8.2"
   },
   "private": true

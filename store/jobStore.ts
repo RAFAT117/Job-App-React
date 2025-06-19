@@ -131,7 +131,7 @@ export const useJobStore = create<JobState>()(
         try {
           setLoading(true);
           setError(null);
-
+          
           const { hits, total } = await searchJobs(
             filter.query || '',
             page,
@@ -142,7 +142,7 @@ export const useJobStore = create<JobState>()(
             filter.remote || null,
             sortBy
           );
-
+          
           const jobs = hits.map(transformApiJobToJobPosting);
           const totalPages = Math.ceil(total / 10);
 

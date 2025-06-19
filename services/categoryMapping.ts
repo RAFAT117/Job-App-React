@@ -86,4 +86,4 @@ export function getEmploymentTypeCode(type: string | null): string | null {
   console.log('Employment type mapping:', { type, code });
   return code || null;
 }
-  
+ 

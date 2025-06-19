@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { StyleSheet, View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { JobList } from '@/components/JobList';
-import { colors } from '@/constants/colors';
+import { colors } from "@/constants/colors";
 import { useJobStore } from '@/store/jobStore';
 
 export default function DiscoverScreen() {

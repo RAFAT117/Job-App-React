@@ -26,8 +26,8 @@ export interface JobSearchResponse {
 const API_BASE_URL = 'https://jobsearch.api.jobtechdev.se/search';
 
 export async function fetchFromAPI(params: Record<string, string | number>): Promise<{ hits: any[]; total: number }> {
-  const queryParams = new URLSearchParams();
-  
+    const queryParams = new URLSearchParams();
+
   Object.entries(params).forEach(([key, value]) => {
     if (value !== null && value !== undefined) {
       queryParams.append(key, String(value));
